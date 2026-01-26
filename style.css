@@ -1,0 +1,23 @@
+/* Te style mają niższy priorytet niż style inline w HTML */
+
+body {
+    font-family: 'Times New Roman', serif; /* Inna czcionka */
+    background-color: lightyellow;        /* Inny kolor tła */
+}
+
+
+h1 {
+    color: red; 
+    text-transform: uppercase;
+}
+
+
+.info-tekst {
+    color: green;
+    font-weight: bold;
+}
+
+
+#glowny-tytul {
+    text-decoration: underline;
+}

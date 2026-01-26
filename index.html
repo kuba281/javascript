@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="dokument">
+    <meta name="author" content="Jakub Izdebski">
+    <title>Strona - Zadanie 1 CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+
+
+    <h1 id="glowny-tytul" style="color: blue;">Strona</h1> 
+    
+
+    <p class="info-tekst" style="font-size: 20px;">
+        To jest paragraf z rozmiarem czcionki 20px ustawionym bezpośrednio w tagu.
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--W kaskadowych arkuszach stylów (CSS) zasada kaskadowości decyduje o tym, która reguła zostanie zastosowana do elementu, 
+gdy kilka z nich się wyklucza. Najwyższy priorytet mają style inline, czyli te zapisane bezpośrednio w tagu HTML za pomocą atrybutu style. 
+Pozwalają one na szybkie nadpisanie innych reguł, ale ich nadmiar utrudnia zarządzanie stroną. 
+Kolejne w hierarchii są style wewnętrzne (sekcja style w head) oraz zewnętrzne (osobny plik .css podłączony przez link). 
+Jeśli te dwie metody mają taką samą wagę, o pierwszeństwie decyduje kolejność wczytywania – styl umieszczony niżej w kodzie HTML nadpisuje te znajdujące się powyżej.
+Kiedy stosować dany sposób?
+Style zewnętrzne: To standard w projektowaniu; pozwalają oddzielić treść od wyglądu i zarządzać wieloma podstronami z jednego pliku.
+Style wewnętrzne: Przydatne, gdy konkretna podstrona wymaga unikalnego formatowania, którego nie chcemy dodawać do wspólnego pliku.
+Style inline: Należy ich unikać; są pomocne jedynie przy szybkich testach lub dynamicznych zmianach wyglądu.
