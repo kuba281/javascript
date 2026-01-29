@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona - Asynchroniczność i API</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <header id="page">
+        <div class="top">
+            <div class="logo">
+                <h1 class="tr-combo">Moja Strona</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="delay-box">Home</a></li>
+                    <li><a href="#" class="delay-box">O nas</a></li>
+                    <li><a href="#" class="delay-box">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="main-content">
+            <article class="post">
+                <h2 class="post-title">Część A i B: Konsola Asynchroniczności</h2>
+                <div class="controls">
+                    <button id="btn-part-a">Uruchom Część A (Promises)</button>
+                    <button id="btn-part-b">Uruchom Część B (Async/Await)</button>
+                </div>
+                <div id="js-console" class="console-box">
+                    <p class="console-placeholder">// Wyniki operacji pojawią się tutaj...</p>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title">Część C: Lista Użytkowników (Fetch API)</h2>
+                
+                <div class="api-controls">
+                    <button id="btn-refresh" class="btn-primary">Odśwież dane</button>
+                    <div id="api-loader" class="ani-loader" style="display: none;"></div>
+                </div>
+
+                <div id="error-box" class="error-msg" style="display: none;"></div>
+
+                <div id="users-container">
+                    <p>Kliknij "Odśwież dane", aby pobrać użytkowników.</p>
+                </div>
+
+                <div id="posts-container" style="display: none;">
+                    <h3>Posty użytkownika: <span id="current-user-name"></span></h3>
+                    <ul id="posts-list"></ul>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <section class="widget">
+                <h3 class="widget-title ani-pulse">Status</h3>
+                <p>Otwórz konsolę developera (F12), aby zobaczyć szczegółowe logi techniczne.</p>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="bottom">
+        <p>© 2025 Moja Strona</p>
+    </footer>
+
+    <script src="script6.js"></script>
+
+</body>
+</html>
